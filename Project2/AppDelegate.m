@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "BlogController.h"
 #import "OAuthViewController.h"
+#import "NewFeatureViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -24,7 +26,8 @@
     
     BlogController *blogVc = [[BlogController alloc] init];
     OAuthViewController *OAuthVC = [[OAuthViewController alloc] init];
-    self.window.rootViewController = OAuthVC;
+    NewFeatureViewController *newFeatureVC = [[NewFeatureViewController alloc] init];
+    self.window.rootViewController = newFeatureVC;
     
     [self.window makeKeyAndVisible];
     return YES;
