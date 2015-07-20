@@ -1,0 +1,29 @@
+//
+//  TLPCH.pch
+//  Project2
+//
+//  Created by lanqs on 15/7/14.
+//  Copyright (c) 2015年 lanqs. All rights reserved.
+//
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+//#ifndef Project2_TLPCH_pch
+#define Project2_TLPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//随机色
+#define TracyRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+//RGB取色
+#define TracyRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#ifdef DEBUG //开发阶段
+#define CusLog(...) NSLog(__VA_ARGS__)
+#else //发布阶段
+#define CusLog(...)
+
+#endif
+
