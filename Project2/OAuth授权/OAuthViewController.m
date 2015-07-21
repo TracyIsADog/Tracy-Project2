@@ -8,6 +8,8 @@
 
 #import "OAuthViewController.h"
 #import "LoadNetWork.h"
+#import "BlogController.h"
+#import "NewFeatureViewController.h"
 
 @interface OAuthViewController ()<UIWebViewDelegate>
 
@@ -17,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //添加webView
     UIWebView *webView = [[UIWebView alloc] init];
     webView.frame = self.view.bounds;
     webView.delegate = self;
@@ -39,9 +42,7 @@
     if (range.length != 0) {
         NSInteger fromIndex = range.location + range.length;
         NSString *code = [url substringFromIndex:fromIndex];
-       // CusLog(@"code=%@",code);
         [self accessTokenWithCode:code];
-        
       //禁止加载回调地址
         return NO;
     }
@@ -61,8 +62,24 @@
     params = para;
     //网络请求
     [LoadNetWork loadNetWorkWithURL:@"https://api.weibo.com/oauth2/access_token" params:params success:^(id responseObject) {
-        CusLog(@"%@",responseObject);
-        
+        //判断版本号
+        NSString *key = @"CFBundleVersion";
+        //获取上一次登录的版本号
+        NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+        //获取当前版本号
+        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+        //版本号相同直接进入blogVc 版本号不同显示新特性并将当前版本号存入沙盒并切换控制器
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        NewFeatureViewController *newFeatureVC = [[NewFeatureViewController alloc] init];
+        BlogController *blogVc = [[BlogController alloc] init];
+        if ([lastVersion isEqualToString:currentVersion]) {
+            window.rootViewController = blogVc;
+        }else{
+            window.rootViewController = newFeatureVC;
+            //将当前版本号存入沙盒
+            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     } failure:^(NSError *error) {
         CusLog(@"%@",error);
     }];

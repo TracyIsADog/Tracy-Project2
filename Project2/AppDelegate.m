@@ -18,17 +18,13 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    
-    BlogController *blogVc = [[BlogController alloc] init];
+    //设置根控
     OAuthViewController *OAuthVC = [[OAuthViewController alloc] init];
-    NewFeatureViewController *newFeatureVC = [[NewFeatureViewController alloc] init];
-    self.window.rootViewController = newFeatureVC;
-    
+    self.window.rootViewController = OAuthVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

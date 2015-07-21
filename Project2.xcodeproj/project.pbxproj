@@ -21,6 +21,7 @@
 		165025E31B54E27E005C3C1D /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165025DC1B54E27E005C3C1D /* MessageController.m */; };
 		165025EA1B54E287005C3C1D /* DiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165025E71B54E287005C3C1D /* DiscoverController.m */; };
 		165025EE1B5526CA005C3C1D /* TLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 165025ED1B5526CA005C3C1D /* TLSearchBar.m */; };
+		169CB1971B5DCD7D000E69E5 /* NewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CB1961B5DCD7D000E69E5 /* NewFeatureViewController.m */; };
 		16A8F9401B5CF1800069A995 /* OAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F93F1B5CF1800069A995 /* OAuthViewController.m */; };
 		16A8F96A1B5D0B7A0069A995 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F9441B5D0B7A0069A995 /* AFHTTPRequestOperation.m */; };
 		16A8F96B1B5D0B7A0069A995 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F9461B5D0B7A0069A995 /* AFHTTPRequestOperationManager.m */; };
@@ -43,7 +44,6 @@
 		16A8F97C1B5D0B7A0069A995 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F9691B5D0B7A0069A995 /* UIWebView+AFNetworking.m */; };
 		16A8F97F1B5D0BAE0069A995 /* LoadNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F97E1B5D0BAE0069A995 /* LoadNetWork.m */; };
 		16E8F5071B5601910022D652 /* DrawUpDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E8F5061B5601910022D652 /* DrawUpDownMenu.m */; };
-		16E957FD1B5D2B0000351228 /* NewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E957FC1B5D2B0000351228 /* NewFeatureViewController.m */; };
 		16FE11841B566432004171D3 /* TLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FE11831B566432004171D3 /* TLTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +87,8 @@
 		165025EB1B55018A005C3C1D /* TLPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPCH.pch; sourceTree = "<group>"; };
 		165025EC1B5526CA005C3C1D /* TLSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLSearchBar.h; path = "../../公共类/TLSearchBar.h"; sourceTree = "<group>"; };
 		165025ED1B5526CA005C3C1D /* TLSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLSearchBar.m; path = "../../公共类/TLSearchBar.m"; sourceTree = "<group>"; };
+		169CB1951B5DCD7D000E69E5 /* NewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureViewController.h; sourceTree = "<group>"; };
+		169CB1961B5DCD7D000E69E5 /* NewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureViewController.m; sourceTree = "<group>"; };
 		16A8F93E1B5CF1800069A995 /* OAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthViewController.h; sourceTree = "<group>"; };
 		16A8F93F1B5CF1800069A995 /* OAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthViewController.m; sourceTree = "<group>"; };
 		16A8F9431B5D0B7A0069A995 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -131,8 +133,6 @@
 		16A8F97E1B5D0BAE0069A995 /* LoadNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadNetWork.m; sourceTree = "<group>"; };
 		16E8F5051B5601910022D652 /* DrawUpDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawUpDownMenu.h; path = "../../公共类/DrawUpDownMenu.h"; sourceTree = "<group>"; };
 		16E8F5061B5601910022D652 /* DrawUpDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawUpDownMenu.m; path = "../../公共类/DrawUpDownMenu.m"; sourceTree = "<group>"; };
-		16E957FB1B5D2B0000351228 /* NewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewFeatureViewController.h; path = ../../../../../Documents/NewFeatureViewController.h; sourceTree = "<group>"; };
-		16E957FC1B5D2B0000351228 /* NewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewFeatureViewController.m; path = ../../../../../Documents/NewFeatureViewController.m; sourceTree = "<group>"; };
 		16FE11821B566432004171D3 /* TLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBar.h; sourceTree = "<group>"; };
 		16FE11831B566432004171D3 /* TLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,7 +179,7 @@
 				16A8F93D1B5CF0380069A995 /* OAuth授权 */,
 				165025AB1B53BD1A005C3C1D /* 公共类 */,
 				165025C71B54E27E005C3C1D /* 基础 */,
-				16A8F9371B5C9E390069A995 /* 新特性 */,
+				169CB1941B5DCD63000E69E5 /* 新特性 */,
 				165025CD1B54E27E005C3C1D /* 首页 */,
 				165025D91B54E27E005C3C1D /* 消息 */,
 				165025E41B54E287005C3C1D /* 发现 */,
@@ -397,11 +397,11 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		16A8F9371B5C9E390069A995 /* 新特性 */ = {
+		169CB1941B5DCD63000E69E5 /* 新特性 */ = {
 			isa = PBXGroup;
 			children = (
-				16E957FB1B5D2B0000351228 /* NewFeatureViewController.h */,
-				16E957FC1B5D2B0000351228 /* NewFeatureViewController.m */,
+				169CB1951B5DCD7D000E69E5 /* NewFeatureViewController.h */,
+				169CB1961B5DCD7D000E69E5 /* NewFeatureViewController.m */,
 			);
 			path = "新特性";
 			sourceTree = "<group>";
@@ -594,7 +594,7 @@
 				165025E21B54E27E005C3C1D /* ProfileController.m in Sources */,
 				16A8F9781B5D0B7A0069A995 /* UIButton+AFNetworking.m in Sources */,
 				165025C31B54C25B005C3C1D /* UIBarButtonItem+Extension.m in Sources */,
-				16E957FD1B5D2B0000351228 /* NewFeatureViewController.m in Sources */,
+				169CB1971B5DCD7D000E69E5 /* NewFeatureViewController.m in Sources */,
 				16A8F9741B5D0B7A0069A995 /* README.md in Sources */,
 				165025DF1B54E27E005C3C1D /* BlogController.m in Sources */,
 				165025861B53AFBD005C3C1D /* AppDelegate.m in Sources */,
